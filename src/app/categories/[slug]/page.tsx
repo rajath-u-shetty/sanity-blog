@@ -52,7 +52,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                             </Link>
                             <ul className="flex gap-5 text-green-500  text-xl">
                                 {item.categories.map((categoryItem, index) => (
-                                <Link href={item.slug.current} key={index}>
+                                <Link href={`/blogs/${item.slug.current}`} key={index}>
                                     <li  className="leading-7 hover:text-green-300  duration-300">{categoryItem.title}</li>
                                 </Link>
                             ))}
